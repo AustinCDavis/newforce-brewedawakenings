@@ -7,10 +7,10 @@ const orders = getOrders()
 
 
 // Function whose responsibility is to find the product for an order
-const findproduct = (order, allProducts) => {
+const findProduct = (order, allPproduct) => {
     let orderProduct = null
 
-    for (const product of allProducts) {
+    for (const product of products) {
         if (product.id === order.productId) {
             orderProduct = product
         }
@@ -20,10 +20,10 @@ const findproduct = (order, allProducts) => {
 }
 
 // Function whose responsibility is to find the employee for an order
-const findemployee = (order, allEmployees) => {
+const findEmployee = (order, allEmployees) => {
     let orderEmployee = null
 
-    for (const employee in allEmployees) {
+    for (const employee of employees) {
         if (employee.id === order.employeeId) {
             orderEmployee = employee
         }
